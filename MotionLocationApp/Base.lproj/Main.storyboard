@@ -28,15 +28,38 @@
                                     <constraint firstAttribute="height" constant="500" id="JqE-Yr-6OI"/>
                                 </constraints>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-Ww-02C">
+                                <rect key="frame" x="16" y="550" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C81-VQ-SQD">
+                                <rect key="frame" x="16" y="601" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="C81-VQ-SQD" secondAttribute="trailing" id="5gv-zd-osd"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ctu-gw-Nkt"/>
+                            <constraint firstItem="C81-VQ-SQD" firstAttribute="top" secondItem="Z7t-Ww-02C" secondAttribute="bottom" constant="30" id="Jbg-kh-8M6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F18-x0-l85" secondAttribute="trailing" constant="-16" id="blw-HH-yGq"/>
+                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fch-4T-1TC"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hYh-ym-2fS"/>
+                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="top" secondItem="F18-x0-l85" secondAttribute="bottom" constant="30" id="mvo-Cd-xZ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z7t-Ww-02C" secondAttribute="trailing" id="oF1-BT-6yo"/>
+                            <constraint firstItem="C81-VQ-SQD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sRm-Id-IcJ"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIH-Jh-fgA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="latitude" destination="Z7t-Ww-02C" id="oWR-PM-2e1"/>
+                        <outlet property="longitude" destination="C81-VQ-SQD" id="8zz-9u-I3A"/>
+                        <outlet property="mapView" destination="F18-x0-l85" id="YEq-zP-olf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
