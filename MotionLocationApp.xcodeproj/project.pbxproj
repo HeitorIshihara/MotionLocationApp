@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75F9E9ED1ED622DE001DDFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9E9EC1ED622DE001DDFF8 /* AppDelegate.swift */; };
+		75F9E9EF1ED622DE001DDFF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9E9EE1ED622DE001DDFF8 /* ViewController.swift */; };
+		75F9E9F21ED622DE001DDFF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F9E9F01ED622DE001DDFF8 /* Main.storyboard */; };
+		75F9E9F41ED622DE001DDFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F9E9F31ED622DE001DDFF8 /* Assets.xcassets */; };
+		75F9E9F71ED622DE001DDFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F9E9F51ED622DE001DDFF8 /* LaunchScreen.storyboard */; };
+		75F9EA021ED622DF001DDFF8 /* MotionLocationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9EA011ED622DF001DDFF8 /* MotionLocationAppTests.swift */; };
+		75F9EA0D1ED622DF001DDFF8 /* MotionLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9EA0C1ED622DF001DDFF8 /* MotionLocationAppUITests.swift */; };
+		75F9EA1C1ED622FD001DDFF8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F9EA1B1ED622FD001DDFF8 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75F9E9FE1ED622DF001DDFF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F9E9E11ED622DE001DDFF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F9E9E81ED622DE001DDFF8;
+			remoteInfo = MotionLocationApp;
+		};
+		75F9EA091ED622DF001DDFF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F9E9E11ED622DE001DDFF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F9E9E81ED622DE001DDFF8;
+			remoteInfo = MotionLocationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75F9E9E91ED622DE001DDFF8 /* MotionLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F9E9EC1ED622DE001DDFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75F9E9EE1ED622DE001DDFF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75F9E9F11ED622DE001DDFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75F9E9F31ED622DE001DDFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75F9E9F61ED622DE001DDFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75F9E9F81ED622DE001DDFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F9E9FD1ED622DF001DDFF8 /* MotionLocationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionLocationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F9EA011ED622DF001DDFF8 /* MotionLocationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionLocationAppTests.swift; sourceTree = "<group>"; };
+		75F9EA031ED622DF001DDFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F9EA081ED622DF001DDFF8 /* MotionLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F9EA0C1ED622DF001DDFF8 /* MotionLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionLocationAppUITests.swift; sourceTree = "<group>"; };
+		75F9EA0E1ED622DF001DDFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F9EA1B1ED622FD001DDFF8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75F9E9E61ED622DE001DDFF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9EA1C1ED622FD001DDFF8 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9E9FA1ED622DF001DDFF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9EA051ED622DF001DDFF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75F9E9E01ED622DE001DDFF8 = {
+			isa = PBXGroup;
+			children = (
+				75F9E9EB1ED622DE001DDFF8 /* MotionLocationApp */,
+				75F9EA001ED622DF001DDFF8 /* MotionLocationAppTests */,
+				75F9EA0B1ED622DF001DDFF8 /* MotionLocationAppUITests */,
+				75F9E9EA1ED622DE001DDFF8 /* Products */,
+				75F9EA1A1ED622FD001DDFF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75F9E9EA1ED622DE001DDFF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75F9E9E91ED622DE001DDFF8 /* MotionLocationApp.app */,
+				75F9E9FD1ED622DF001DDFF8 /* MotionLocationAppTests.xctest */,
+				75F9EA081ED622DF001DDFF8 /* MotionLocationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75F9E9EB1ED622DE001DDFF8 /* MotionLocationApp */ = {
+			isa = PBXGroup;
+			children = (
+				75F9E9EC1ED622DE001DDFF8 /* AppDelegate.swift */,
+				75F9E9EE1ED622DE001DDFF8 /* ViewController.swift */,
+				75F9E9F01ED622DE001DDFF8 /* Main.storyboard */,
+				75F9E9F31ED622DE001DDFF8 /* Assets.xcassets */,
+				75F9E9F51ED622DE001DDFF8 /* LaunchScreen.storyboard */,
+				75F9E9F81ED622DE001DDFF8 /* Info.plist */,
+			);
+			path = MotionLocationApp;
+			sourceTree = "<group>";
+		};
+		75F9EA001ED622DF001DDFF8 /* MotionLocationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				75F9EA011ED622DF001DDFF8 /* MotionLocationAppTests.swift */,
+				75F9EA031ED622DF001DDFF8 /* Info.plist */,
+			);
+			path = MotionLocationAppTests;
+			sourceTree = "<group>";
+		};
+		75F9EA0B1ED622DF001DDFF8 /* MotionLocationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75F9EA0C1ED622DF001DDFF8 /* MotionLocationAppUITests.swift */,
+				75F9EA0E1ED622DF001DDFF8 /* Info.plist */,
+			);
+			path = MotionLocationAppUITests;
+			sourceTree = "<group>";
+		};
+		75F9EA1A1ED622FD001DDFF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F9EA1B1ED622FD001DDFF8 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75F9E9E81ED622DE001DDFF8 /* MotionLocationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F9EA111ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationApp" */;
+			buildPhases = (
+				75F9E9E51ED622DE001DDFF8 /* Sources */,
+				75F9E9E61ED622DE001DDFF8 /* Frameworks */,
+				75F9E9E71ED622DE001DDFF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionLocationApp;
+			productName = MotionLocationApp;
+			productReference = 75F9E9E91ED622DE001DDFF8 /* MotionLocationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75F9E9FC1ED622DF001DDFF8 /* MotionLocationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F9EA141ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationAppTests" */;
+			buildPhases = (
+				75F9E9F91ED622DF001DDFF8 /* Sources */,
+				75F9E9FA1ED622DF001DDFF8 /* Frameworks */,
+				75F9E9FB1ED622DF001DDFF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75F9E9FF1ED622DF001DDFF8 /* PBXTargetDependency */,
+			);
+			name = MotionLocationAppTests;
+			productName = MotionLocationAppTests;
+			productReference = 75F9E9FD1ED622DF001DDFF8 /* MotionLocationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75F9EA071ED622DF001DDFF8 /* MotionLocationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F9EA171ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationAppUITests" */;
+			buildPhases = (
+				75F9EA041ED622DF001DDFF8 /* Sources */,
+				75F9EA051ED622DF001DDFF8 /* Frameworks */,
+				75F9EA061ED622DF001DDFF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75F9EA0A1ED622DF001DDFF8 /* PBXTargetDependency */,
+			);
+			name = MotionLocationAppUITests;
+			productName = MotionLocationAppUITests;
+			productReference = 75F9EA081ED622DF001DDFF8 /* MotionLocationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75F9E9E11ED622DE001DDFF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Heitor Ishihara";
+				TargetAttributes = {
+					75F9E9E81ED622DE001DDFF8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7SE9929Z59;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					75F9E9FC1ED622DF001DDFF8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7SE9929Z59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75F9E9E81ED622DE001DDFF8;
+					};
+					75F9EA071ED622DF001DDFF8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7SE9929Z59;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 75F9E9E81ED622DE001DDFF8;
+					};
+				};
+			};
+			buildConfigurationList = 75F9E9E41ED622DE001DDFF8 /* Build configuration list for PBXProject "MotionLocationApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75F9E9E01ED622DE001DDFF8;
+			productRefGroup = 75F9E9EA1ED622DE001DDFF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75F9E9E81ED622DE001DDFF8 /* MotionLocationApp */,
+				75F9E9FC1ED622DF001DDFF8 /* MotionLocationAppTests */,
+				75F9EA071ED622DF001DDFF8 /* MotionLocationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75F9E9E71ED622DE001DDFF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9E9F71ED622DE001DDFF8 /* LaunchScreen.storyboard in Resources */,
+				75F9E9F41ED622DE001DDFF8 /* Assets.xcassets in Resources */,
+				75F9E9F21ED622DE001DDFF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9E9FB1ED622DF001DDFF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9EA061ED622DF001DDFF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75F9E9E51ED622DE001DDFF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9E9EF1ED622DE001DDFF8 /* ViewController.swift in Sources */,
+				75F9E9ED1ED622DE001DDFF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9E9F91ED622DF001DDFF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9EA021ED622DF001DDFF8 /* MotionLocationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F9EA041ED622DF001DDFF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F9EA0D1ED622DF001DDFF8 /* MotionLocationAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F9E9FF1ED622DF001DDFF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F9E9E81ED622DE001DDFF8 /* MotionLocationApp */;
+			targetProxy = 75F9E9FE1ED622DF001DDFF8 /* PBXContainerItemProxy */;
+		};
+		75F9EA0A1ED622DF001DDFF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F9E9E81ED622DE001DDFF8 /* MotionLocationApp */;
+			targetProxy = 75F9EA091ED622DF001DDFF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75F9E9F01ED622DE001DDFF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F9E9F11ED622DE001DDFF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75F9E9F51ED622DE001DDFF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F9E9F61ED622DE001DDFF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75F9EA0F1ED622DF001DDFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75F9EA101ED622DF001DDFF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75F9EA121ED622DF001DDFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		75F9EA131ED622DF001DDFF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		75F9EA151ED622DF001DDFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionLocationApp.app/MotionLocationApp";
+			};
+			name = Debug;
+		};
+		75F9EA161ED622DF001DDFF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionLocationApp.app/MotionLocationApp";
+			};
+			name = Release;
+		};
+		75F9EA181ED622DF001DDFF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MotionLocationApp;
+			};
+			name = Debug;
+		};
+		75F9EA191ED622DF001DDFF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7SE9929Z59;
+				INFOPLIST_FILE = MotionLocationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.aula.MotionLocationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MotionLocationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75F9E9E41ED622DE001DDFF8 /* Build configuration list for PBXProject "MotionLocationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F9EA0F1ED622DF001DDFF8 /* Debug */,
+				75F9EA101ED622DF001DDFF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F9EA111ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F9EA121ED622DF001DDFF8 /* Debug */,
+				75F9EA131ED622DF001DDFF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75F9EA141ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F9EA151ED622DF001DDFF8 /* Debug */,
+				75F9EA161ED622DF001DDFF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75F9EA171ED622DF001DDFF8 /* Build configuration list for PBXNativeTarget "MotionLocationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F9EA181ED622DF001DDFF8 /* Debug */,
+				75F9EA191ED622DF001DDFF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75F9E9E11ED622DE001DDFF8 /* Project object */;
+}
