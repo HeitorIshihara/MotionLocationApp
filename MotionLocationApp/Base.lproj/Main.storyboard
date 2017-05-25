@@ -29,13 +29,25 @@
                                 </constraints>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-Ww-02C">
-                                <rect key="frame" x="16" y="550" width="343" height="21"/>
+                                <rect key="frame" x="16" y="528" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C81-VQ-SQD">
-                                <rect key="frame" x="16" y="601" width="343" height="21"/>
+                                <rect key="frame" x="16" y="557" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9q-8d-cqu">
+                                <rect key="frame" x="16" y="586" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDz-Z7-Omg">
+                                <rect key="frame" x="16" y="615" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,22 +55,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="C81-VQ-SQD" secondAttribute="trailing" id="5gv-zd-osd"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ctu-gw-Nkt"/>
-                            <constraint firstItem="C81-VQ-SQD" firstAttribute="top" secondItem="Z7t-Ww-02C" secondAttribute="bottom" constant="30" id="Jbg-kh-8M6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qDz-Z7-Omg" secondAttribute="trailing" id="Gor-Gy-mz0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T9q-8d-cqu" secondAttribute="trailing" id="Hfc-DP-ZKn"/>
+                            <constraint firstItem="T9q-8d-cqu" firstAttribute="top" secondItem="C81-VQ-SQD" secondAttribute="bottom" constant="8" id="KbF-eo-Xt9"/>
+                            <constraint firstItem="T9q-8d-cqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LBy-uY-fKQ"/>
+                            <constraint firstItem="qDz-Z7-Omg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="T7j-4X-3if"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C81-VQ-SQD" secondAttribute="trailing" id="UHw-py-ubx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F18-x0-l85" secondAttribute="trailing" constant="-16" id="blw-HH-yGq"/>
-                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fch-4T-1TC"/>
+                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ewU-Fv-ggg"/>
+                            <constraint firstItem="C81-VQ-SQD" firstAttribute="top" secondItem="Z7t-Ww-02C" secondAttribute="bottom" constant="8" id="hMh-Qb-yrI"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hYh-ym-2fS"/>
-                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="top" secondItem="F18-x0-l85" secondAttribute="bottom" constant="30" id="mvo-Cd-xZ9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Z7t-Ww-02C" secondAttribute="trailing" id="oF1-BT-6yo"/>
-                            <constraint firstItem="C81-VQ-SQD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sRm-Id-IcJ"/>
+                            <constraint firstItem="C81-VQ-SQD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n1J-Zj-Lqa"/>
+                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="top" secondItem="F18-x0-l85" secondAttribute="bottom" constant="8" id="rxs-wd-3pX"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIH-Jh-fgA"/>
+                            <constraint firstItem="Z7t-Ww-02C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y0N-TT-m2j"/>
+                            <constraint firstItem="qDz-Z7-Omg" firstAttribute="top" secondItem="T9q-8d-cqu" secondAttribute="bottom" constant="8" id="yi0-uP-SSo"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="latitude" destination="Z7t-Ww-02C" id="oWR-PM-2e1"/>
                         <outlet property="longitude" destination="C81-VQ-SQD" id="8zz-9u-I3A"/>
                         <outlet property="mapView" destination="F18-x0-l85" id="YEq-zP-olf"/>
+                        <outlet property="pitch" destination="qDz-Z7-Omg" id="Icb-h6-Qfc"/>
+                        <outlet property="roll" destination="T9q-8d-cqu" id="RyG-7h-Ogg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

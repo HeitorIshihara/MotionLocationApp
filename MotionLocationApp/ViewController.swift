@@ -12,7 +12,8 @@ import CoreLocation
 import CoreMotion
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
+    let motionManager: CMMotionManager = CMMotionManager()
     let locationManager: CLLocationManager = CLLocationManager()
     var here: CLLocation = CLLocation(latitude: 0, longitude: 0)
     
@@ -26,6 +27,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     //Variaves de teste
     @IBOutlet weak var latitude: UILabel!
     @IBOutlet weak var longitude: UILabel!
+    @IBOutlet weak var roll: UILabel!
+    @IBOutlet weak var pitch: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +48,23 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         mapView.delegate = self
         
+        if motionManager.isDeviceMotionAvailable{
+            motionManager.deviceMotionUpdateInterval = 0.5
+            motionManager.startDeviceMotionUpdates(to: OperationQueue.main, withHandler: {
+                (deviceMotionData, error) in
+                if error != nil {
+                    print("erro")
+                }else{
+                    if let data = deviceMotionData {
+                        self.roll.text = "roll: \(data.attitude.roll * 180 / M_PI) degrees"
+                        self.pitch.text = "pitch: \(data.attitude.pitch * 180 / M_PI) degrees"
+                    }
+                }
+            })
+        }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -58,7 +77,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             centerMap(location: here)
         }
         
-    
+        
         latitude.text = ("Latitude: \(here.coordinate.latitude)")
         longitude.text = ("Longitude: \(here.coordinate.longitude)")
         
@@ -98,7 +117,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         overlayRenderer.lineWidth = 1 //Largura da Linha
         return overlayRenderer
     }
-
-
+    
+    
 }
 
