@@ -29,6 +29,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var longitude: UILabel!
     @IBOutlet weak var roll: UILabel!
     @IBOutlet weak var pitch: UILabel!
+    @IBOutlet weak var yaw: UILabel!
     
     
     override func viewDidLoad() {
@@ -50,7 +51,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if motionManager.isDeviceMotionAvailable{
             motionManager.deviceMotionUpdateInterval = 0.5
-            motionManager.startDeviceMotionUpdates(to: OperationQueue.main, withHandler: {
+            motionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical, to: OperationQueue.main, withHandler: {
                 (deviceMotionData, error) in
                 if error != nil {
                     print("erro")
@@ -58,6 +59,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     if let data = deviceMotionData {
                         self.roll.text = "roll: \(data.attitude.roll * 180 / M_PI) degrees"
                         self.pitch.text = "pitch: \(data.attitude.pitch * 180 / M_PI) degrees"
+                        self.yaw.text = "yaw: \(data.attitude.yaw * 180 / M_PI) degrees"
                     }
                 }
             })
