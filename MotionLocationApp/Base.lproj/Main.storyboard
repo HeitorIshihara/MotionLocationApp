@@ -29,7 +29,7 @@
                                 </constraints>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyQ-fv-aho">
-                                <rect key="frame" x="16" y="530" width="343" height="40"/>
+                                <rect key="frame" x="16" y="560" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="63h-po-qly"/>
                                 </constraints>
@@ -37,23 +37,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-Id-UmV">
-                                <rect key="frame" x="16" y="590" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="F18-x0-l85" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ctu-gw-Nkt"/>
-                            <constraint firstItem="NyQ-fv-aho" firstAttribute="top" secondItem="F18-x0-l85" secondAttribute="bottom" constant="10" id="Epi-ui-Sor"/>
-                            <constraint firstItem="PSO-Id-UmV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I5a-tj-m50"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NyQ-fv-aho" secondAttribute="trailing" id="Scj-2J-FRw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F18-x0-l85" secondAttribute="trailing" constant="-16" id="blw-HH-yGq"/>
-                            <constraint firstItem="PSO-Id-UmV" firstAttribute="top" secondItem="NyQ-fv-aho" secondAttribute="bottom" constant="20" id="cGi-fv-02S"/>
-                            <constraint firstItem="PSO-Id-UmV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gxK-hO-Tec"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hYh-ym-2fS"/>
+                            <constraint firstItem="NyQ-fv-aho" firstAttribute="top" secondItem="F18-x0-l85" secondAttribute="bottom" constant="40" id="q5f-nO-Bac"/>
                             <constraint firstItem="NyQ-fv-aho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vH0-W6-r9F"/>
                             <constraint firstItem="F18-x0-l85" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wIH-Jh-fgA"/>
                         </constraints>
@@ -61,7 +52,6 @@
                     <connections>
                         <outlet property="indicador" destination="NyQ-fv-aho" id="2wt-bO-lK1"/>
                         <outlet property="mapView" destination="F18-x0-l85" id="YEq-zP-olf"/>
-                        <outlet property="yaw" destination="PSO-Id-UmV" id="kPU-6K-1s3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

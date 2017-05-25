@@ -32,7 +32,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 //    @IBOutlet weak var longitude: UILabel!
 //    @IBOutlet weak var roll: UILabel!
 //    @IBOutlet weak var pitch: UILabel!
-    @IBOutlet weak var yaw: UILabel!
+//    @IBOutlet weak var yaw: UILabel!
     
     
     override func viewDidLoad() {
@@ -61,10 +61,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     if let data = deviceMotionData {
 //                        self.roll.text = "roll: \(data.attitude.roll * 180 / M_PI) degrees"
 //                        self.pitch.text = "pitch: \(data.attitude.pitch * 180 / M_PI) degrees"
-                        self.yaw.text = "yaw: \(data.attitude.yaw * 180 / Double.pi) degrees"
+//                        self.yaw.text = "yaw: \(data.attitude.yaw * 180 / Double.pi) degrees"
                         self.yawData = data.attitude.yaw * 180 / Double.pi
                         
-                        print("entrou")
+
                         
                         //Verificar se o usuario se encontra em alguma das regioes
                         if self.here.distance(from: self.regiaoFCICoordinate) < 20 {
