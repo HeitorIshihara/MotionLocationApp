@@ -18,17 +18,20 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var here: CLLocation = CLLocation(latitude: 0, longitude: 0)
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var indicador: UILabel!
     
     //Regioes
-    let regiaoFCICoordinate = CLLocationCoordinate2D(latitude: -23.5473474351900, longitude: -46.651433911300)
-    let regiaoStarbucksCoordinate = CLLocationCoordinate2D(latitude: -23.5468286695178, longitude: -46.6520971712159)
+    let regiaoFCICoordinate = CLLocation(latitude: -23.5473474351900, longitude: -46.651433911300)
+    let regiaoStarbucksCoordinate = CLLocation(latitude: -23.5468286695178, longitude: -46.6520971712159)
     
+    //Parametros
+    var yawData: Double = 0
     
     //Variaves de teste
-    @IBOutlet weak var latitude: UILabel!
-    @IBOutlet weak var longitude: UILabel!
-    @IBOutlet weak var roll: UILabel!
-    @IBOutlet weak var pitch: UILabel!
+//    @IBOutlet weak var latitude: UILabel!
+//    @IBOutlet weak var longitude: UILabel!
+//    @IBOutlet weak var roll: UILabel!
+//    @IBOutlet weak var pitch: UILabel!
     @IBOutlet weak var yaw: UILabel!
     
     
@@ -54,12 +57,46 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             motionManager.startDeviceMotionUpdates(using: .xTrueNorthZVertical, to: OperationQueue.main, withHandler: {
                 (deviceMotionData, error) in
                 if error != nil {
-                    print("erro")
                 }else{
                     if let data = deviceMotionData {
-                        self.roll.text = "roll: \(data.attitude.roll * 180 / M_PI) degrees"
-                        self.pitch.text = "pitch: \(data.attitude.pitch * 180 / M_PI) degrees"
-                        self.yaw.text = "yaw: \(data.attitude.yaw * 180 / M_PI) degrees"
+//                        self.roll.text = "roll: \(data.attitude.roll * 180 / M_PI) degrees"
+//                        self.pitch.text = "pitch: \(data.attitude.pitch * 180 / M_PI) degrees"
+                        self.yaw.text = "yaw: \(data.attitude.yaw * 180 / Double.pi) degrees"
+                        self.yawData = data.attitude.yaw * 180 / Double.pi
+                        
+                        print("entrou")
+                        
+                        //Verificar se o usuario se encontra em alguma das regioes
+                        if self.here.distance(from: self.regiaoFCICoordinate) < 20 {
+                            
+                            if (self.yawData > -45.0 && self.yawData < 45.0) {
+                                self.indicador.text = "Você está olhando para o MackGraphe"
+                            }
+                            else if((self.yawData < -135.0 && self.yawData > -180.0) || (self.yawData < 180.0 && self.yawData > 135.0)){
+                                self.indicador.text = "Você está olhando para a FCI"
+                            }
+                            else {
+                                self.view.backgroundColor = UIColor.white
+                                self.indicador.text = "Olá!"
+                            }
+                            
+                        }
+                        
+                        if self.here.distance(from: self.regiaoStarbucksCoordinate) < 20 {
+                            
+                            if (self.yawData > -45.0 && self.yawData < 45.0) {
+                                self.indicador.text = "Você está olhando para a praça de alimentação"
+                            }
+                            else if((self.yawData < -135.0 && self.yawData > -180.0) || (self.yawData < 180.0 && self.yawData > 135.0)){
+                                self.indicador.text = "Você está olhando para o Starbucks"
+                            }
+                            else {
+                                self.view.backgroundColor = UIColor.white
+                                self.indicador.text = "Olá!"
+                            }
+                            
+                        }
+                        
                     }
                 }
             })
@@ -80,28 +117,31 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
         
         
-        latitude.text = ("Latitude: \(here.coordinate.latitude)")
-        longitude.text = ("Longitude: \(here.coordinate.longitude)")
+//        latitude.text = ("Latitude: \(here.coordinate.latitude)")
+//        longitude.text = ("Longitude: \(here.coordinate.longitude)")
         
         //Adicionar regioes
-        let regiaoFCI = MKCoordinateRegionMakeWithDistance(regiaoFCICoordinate, 20, 20)
+        let regiaoFCI = MKCoordinateRegionMakeWithDistance(regiaoFCICoordinate.coordinate, 20, 20)
         let circleRegiaoFCI = MKCircle(center: regiaoFCI.center, radius: 20)
         mapView.add(circleRegiaoFCI)
         
-        let regiaoStarbucks = MKCoordinateRegionMakeWithDistance(regiaoStarbucksCoordinate, 20, 20)
+        let regiaoStarbucks = MKCoordinateRegionMakeWithDistance(regiaoStarbucksCoordinate.coordinate, 20, 20)
         let circleRegiaoStarbucks = MKCircle(center: regiaoStarbucks.center, radius: 20)
         mapView.add(circleRegiaoStarbucks)
         
         //Adicionar Pins
         let pinFCI = MKPointAnnotation()
         pinFCI.title = "FCI"
-        pinFCI.coordinate = regiaoFCICoordinate
+        pinFCI.coordinate = regiaoFCICoordinate.coordinate
         mapView.addAnnotation(pinFCI)
         
         let pinStarbucks = MKPointAnnotation()
         pinStarbucks.title = "Praça"
-        pinStarbucks.coordinate = regiaoStarbucksCoordinate
+        pinStarbucks.coordinate = regiaoStarbucksCoordinate.coordinate
         mapView.addAnnotation(pinStarbucks)
+        
+        
+        
         
     }
     
